@@ -27,7 +27,7 @@ class HandwrittenDigitRecognitionApp:
         self.canvas.bind("<Leave>", lambda event: self.canvas.config(cursor="arrow"))  # arrow cursor otherwise
 
         # Initialize variables
-        self.is_drawing = False  # Flag indicating App is in non-drawing state by default
+        self.is_drawing = False  # flag indicating App is in non-drawing state by default
         self.last_x, self.last_y = None, None
 
         # Initialize Keras model (name:HandWrittenDigitClassifier)
